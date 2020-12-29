@@ -1,4 +1,4 @@
-package uz.pdp;
+package uz.unzosoft;
 
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.meta.TelegramBotsApi;

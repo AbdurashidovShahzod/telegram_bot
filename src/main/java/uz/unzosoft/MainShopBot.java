@@ -1,4 +1,4 @@
-package uz.pdp;
+package uz.unzosoft;
 
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
@@ -61,7 +61,6 @@ public class MainShopBot extends TelegramLongPollingBot {
                     } catch (TelegramApiException e) {
                         e.printStackTrace();
                     }
-
                 } else if (text.equals("Тилни танланг")) {
                     SendMessage sendMessage = new SendMessage()
                             .setText("Хуш келибсиз")
@@ -94,6 +93,7 @@ public class MainShopBot extends TelegramLongPollingBot {
                 try {
                     execute(sendMessage);
                 } catch (TelegramApiException e) {
+
                     e.printStackTrace();
                 }
             }
@@ -101,10 +101,10 @@ public class MainShopBot extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return botUserName;
+        return "";
     }
 
     public String getBotToken() {
-        return botToken;
+        return "";
     }
 }
